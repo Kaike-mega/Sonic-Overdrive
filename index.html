@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sonic Overdrive Catalog</title>
-
     <link rel="stylesheet" href="style.css" />
+    <script src="popup.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap"
       rel="stylesheet"
@@ -50,7 +50,7 @@
           </li>
 
           <li>
-            <img src="img/icon/icon-ataques.png" alt="Espécies" />
+            <img src="img/icon/icon-especies.png" alt="Espécies" />
             <span>Espécies</span>
           </li>
 
@@ -70,7 +70,10 @@
           </li>
 
           <li>
-            <img src="img/icon/icon-conceito.png" alt="Conceitos e Curiosidades" />
+            <img
+              src="img/icon/icon-conceito.png"
+              alt="Conceitos e Curiosidades"
+            />
             <span>Conceitos e Curiosidades</span>
           </li>
         </ul>
@@ -86,72 +89,282 @@
         <div class="banner"></div>
 
         <section class="box">
-          <h1>Home</h1>
+          <div class="home-header">
+            <h1>Home</h1>
 
-          <div class="title">Bem Vindo ao Sonic Universe Catalog</div>
+            <div class="line"></div>
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non
-            orci vitae magna varius porta. Suspendisse potenti.
-          </p>
+            <div class="welcome-card">Bem Vindo ao Sonic Universe Catalog!</div>
 
-          <div class="title">Explicando do Site</div>
+            <p class="home-text">
+              Seja bem-vindo ao Sonic Overdrive, um universo inspirado na
+              franquia Sonic, mas com uma história totalmente reinterpretada.
+              Aqui, você encontrará uma narrativa original que adapta eventos
+              dos jogos e de outras mídias, apresentando novos acontecimentos,
+              personagens, conceitos e reviravoltas. <br />
 
-          <div class="categoria">
-            <h2>História</h2>
+              Além da história, o site reúne uma enciclopédia completa sobre
+              este universo, contendo informações detalhadas sobre personagens,
+              espécies, energias, transformações, itens, relíquias, armas,
+              ataques, mundos, regiões e muito mais. <br />
 
-            <p>
-              Nesta seção você encontrará toda a cronologia do universo Sonic,
-              desde os jogos clássicos até os acontecimentos mais recentes.
+              Explore cada seção, descubra os segredos deste mundo e acompanhe
+              uma nova jornada onde o passado é reescrito e o futuro reserva
+              desafios ainda maiores.
             </p>
           </div>
 
-          <div class="categoria">
-            <h2>Personagens</h2>
+          <!-- Cards -->
 
-            <p>
-              Informações completas sobre heróis, vilões e personagens
-              secundários.
-            </p>
+          <!-- História -->
+          <div class="card historia">
+            <img src="img/cards/historia.gif" class="card-img" />
+
+            <div class="card-info">
+              <h2>História</h2>
+              <p>
+                A seção História apresenta a narrativa principal de Sonic
+                Overdrive, uma obra original inspirada no universo de Sonic the
+                Hedgehog. Baseada em elementos dos jogos e de outras mídias da
+                franquia, esta história reimagina personagens, acontecimentos e
+                conceitos, incorporando novas interpretações, eventos inéditos e
+                mudanças significativas em relação ao material original.<br />
+                Nesta seção, você poderá acompanhar os principais acontecimentos
+                da linha do tempo, organizados em sagas e capítulos, explorando
+                uma versão alternativa do universo de Sonic desenvolvida com
+                identidade própria.
+              </p>
+            </div>
+            <div
+              class="zigzag-btn"
+              onclick="
+                abrirPopup(
+                  'História',
+                  'Conheça toda a cronologia do universo Sonic.',
+                )
+              "
+            >
+              <img src="img/icon/iconC-munitor.gif" alt="" />
+            </div>
           </div>
 
-          <div class="categoria">
-            <h2>Itens e Relíquias</h2>
+          <!-- Personagens -->
+          <div class="card personagens">
+            <div
+              class="zigzag-btn"
+              onclick="
+                abrirPopup(
+                  'História',
+                  'Conheça toda a cronologia do universo Sonic.',
+                )
+              "
+            >
+              <img src="img/icon/iconC-munitor.gif" alt="" />
+            </div>
 
-            <p>
-              Chaos Emeralds, Sol Emeralds, Master Emerald e diversos outros
-              itens.
-            </p>
+            <div class="card-info">
+              <h2>Personagens</h2>
+              <p>Informações completas sobre heróis, vilões e personagens.</p>
+            </div>
+            <img src="img/cards/personagens.gif" class="card-img" />
           </div>
 
-          <div class="categoria">
-            <h2>Armas</h2>
+          <!-- Itens -->
+          <div class="card itens">
+            <img src="img/cards/itens.gif" class="card-img" />
 
-            <p>
-              Equipamentos utilizados pela G.U.N., Eggman e outros personagens.
-            </p>
+            <div class="card-info">
+              <h2>Itens e Artefatos</h2>
+              <p>Chaos Emeralds, Master Emerald e diversos artefatos.</p>
+            </div>
+
+            <div
+              class="zigzag-btn"
+              onclick="
+                abrirPopup(
+                  'História',
+                  'Conheça toda a cronologia do universo Sonic.',
+                )
+              "
+            >
+              <img src="img/icon/iconC-munitor.gif" alt="" />
+            </div>
           </div>
 
-          <div class="categoria">
-            <h2>Ataques e Poderes</h2>
+          <!-- Armas -->
+          <div class="card armas">
+            <div
+              class="zigzag-btn"
+              onclick="
+                abrirPopup(
+                  'História',
+                  'Conheça toda a cronologia do universo Sonic.',
+                )
+              "
+            >
+              <img src="img/icon/iconC-munitor.gif" alt="" />
+            </div>
 
-            <p>
-              Explicação de habilidades, técnicas especiais e transformações.
-            </p>
+            <div class="card-info">
+              <h2>Armas</h2>
+              <p>Equipamentos utilizados pela G.U.N., Eggman e outros.</p>
+            </div>
+
+            <img src="img/cards/armas.gif" class="card-img" />
           </div>
 
-          <div class="categoria">
-            <h2>Raças</h2>
+          <!-- Energias -->
+          <div class="card energias">
+            <img src="img/cards/energia.gif" class="card-img" />
 
-            <p>
-              Mobians, Humanos, Ancients e outras espécies do universo Sonic.
-            </p>
+            <div class="card-info">
+              <h2>Energias</h2>
+              <p>Chaos Energy, Dark Gaia Energy, Sol Energy e outras.</p>
+            </div>
+
+            <div
+              class="zigzag-btn"
+              onclick="
+                abrirPopup(
+                  'História',
+                  'Conheça toda a cronologia do universo Sonic.',
+                )
+              "
+            >
+              <img src="img/icon/iconC-munitor.gif" alt="" />
+            </div>
           </div>
 
-          <div class="categoria">
-            <h2>Grupos</h2>
+          <!-- Ataques -->
+          <div class="card ataques">
+            <div
+              class="zigzag-btn"
+              onclick="
+                abrirPopup(
+                  'História',
+                  'Conheça toda a cronologia do universo Sonic.',
+                )
+              "
+            >
+              <img src="img/icon/iconC-munitor.gif" alt="" />
+            </div>
 
-            <p>Equipes, organizações e exércitos presentes na franquia.</p>
+            <div class="card-info">
+              <h2>Ataques e Poderes</h2>
+              <p>Spin Dash, Chaos Control, Boost, Homing Attack...</p>
+            </div>
+
+            <img src="img/cards/ataques.gif" class="card-img" />
+          </div>
+
+          <!-- Espécies -->
+          <div class="card especies">
+            <img src="img/cards/especies.gif" class="card-img" />
+
+            <div class="card-info">
+              <h2>Espécies</h2>
+              <p>Mobians, Humanos, Ancients, Wisps...</p>
+            </div>
+
+            <div
+              class="zigzag-btn"
+              onclick="
+                abrirPopup(
+                  'História',
+                  'Conheça toda a cronologia do universo Sonic.',
+                )
+              "
+            >
+              <img src="img/icon/iconC-munitor.gif" alt="" />
+            </div>
+          </div>
+
+          <!-- Grupos -->
+          <div class="card grupos">
+            <div
+              class="zigzag-btn"
+              onclick="
+                abrirPopup(
+                  'História',
+                  'Conheça toda a cronologia do universo Sonic.',
+                )
+              "
+            >
+              <img src="img/icon/iconC-munitor.gif" alt="" />
+            </div>
+
+            <div class="card-info">
+              <h2>Grupos</h2>
+              <p>G.U.N., Diamond Cutters, Babylon Rogues...</p>
+            </div>
+
+            <img src="img/cards/grupos.gif" class="card-img" />
+          </div>
+
+          <!-- Transformações -->
+          <div class="card transformacoes">
+            <img src="img/cards/super.gif" class="card-img" />
+
+            <div class="card-info">
+              <h2>Transformações</h2>
+              <p>Super Sonic, Hyper Sonic, Darkspine...</p>
+            </div>
+
+            <div
+              class="zigzag-btn"
+              onclick="
+                abrirPopup(
+                  'História',
+                  'Conheça toda a cronologia do universo Sonic.',
+                )
+              "
+            >
+              <img src="img/icon/iconC-munitor.gif" alt="" />
+            </div>
+          </div>
+
+          <!-- Locais -->
+          <div class="card locais">
+            <div
+              class="zigzag-btn"
+              onclick="
+                abrirPopup(
+                  'História',
+                  'Conheça toda a cronologia do universo Sonic.',
+                )
+              "
+            >
+              <img src="img/icon/iconC-munitor.gif" alt="" />
+            </div>
+
+            <div class="card-info">
+              <h2>Locais e Regiões</h2>
+              <p>Green Hill, Angel Island, Central City...</p>
+            </div>
+
+            <img src="img/cards/mapa.gif" class="card-img" />
+          </div>
+
+          <!-- Conceitos -->
+          <div class="card conceitos">
+            <img src="img/cards/conceitos.gif" class="card-img" />
+
+            <div class="card-info">
+              <h2>Conceitos e Curiosidades</h2>
+              <p>Informações extras sobre todo o universo Sonic.</p>
+            </div>
+
+            <div
+              class="zigzag-btn"
+              onclick="
+                abrirPopup(
+                  'História',
+                  'Conheça toda a cronologia do universo Sonic.',
+                )
+              "
+            >
+              <img src="img/icon/iconC-munitor.gif" alt="" />
+            </div>
           </div>
         </section>
 
