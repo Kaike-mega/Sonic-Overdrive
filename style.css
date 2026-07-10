@@ -110,8 +110,10 @@ body {
   flex-shrink: 0;
 }
 
-.menu li span {
+.menu li a {
   flex: 1;
+  color: white;
+  text-decoration: none;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
